@@ -36,7 +36,8 @@ public class Main {
                 out.println("not equals");
             }
 
-            int position = att.indexOf(attractionToFind);
+            Attractions attractionToFind2 = new Attractions("dos");
+            int position = attractionToFind2.getIndexOf(att,attractionToFind2);
 
 
             /////arrays///////////////////////////////////////////////

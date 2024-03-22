@@ -19,9 +19,9 @@ public class Attractions {
         this.name = name;
     }
 
-    public int getIndexOf(Attractions attractionToFind){
+    public int getIndexOf(List<Attractions> list, Attractions attractionToFind){
         int counter = 0;
-        for (Attractions a: this.att) {
+        for (Attractions a: list) {
             if(a.equals(attractionToFind)){
                 return counter;
             }else{
