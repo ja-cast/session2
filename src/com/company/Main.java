@@ -14,7 +14,32 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            
+
+
+            List<Attractions> att = new ArrayList<>();
+            att.add(new Attractions("uno"));
+            att.add(new Attractions("dos"));
+            att.add(new Attractions("tres"));
+            att.add(new Attractions("cuatro"));
+
+            Attractions attractionToFind = new Attractions("uno");
+
+            att.forEach((x)->{
+                if(attractionToFind.equals(x)){
+                    x.setName("one");
+                }
+            });
+
+            if(attractionToFind.equals(attractionToFind)){
+                out.println("equals");
+            }else{
+                out.println("not equals");
+            }
+
+            int position = att.indexOf(attractionToFind);
+
+
+            /////arrays///////////////////////////////////////////////
             int grades[];
             grades = new int[10];
 
